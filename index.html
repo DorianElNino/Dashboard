@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu May 24 2018 13:43:00 GMT+0000 (UTC)  -->
+<!--  Last Published: Tue May 29 2018 09:44:33 GMT+0000 (UTC)  -->
 <html data-wf-page="5b05f16f1dfec2c7fe606583" data-wf-site="5b05f16f1dfec273b7606582">
 <head>
   <meta charset="utf-8">
@@ -115,9 +115,9 @@
               <div>Visualize your detailed analytics.</div>
             </div>
           </div>
-          <div class="top-option-bar"></div>
         </div>
         <div class="homepage-top-option">
+          <div class="top-option-bar"></div>
           <div class="homepage-top-option-content">
             <div class="homepage-top-time">
               <div class="homepage-top-time-icon"><img src="images/Total-Time.png" width="25" height="25"></div>
@@ -139,31 +139,30 @@
           <div class="homepage-top-title-content">
             <div class="homepage-top-title-icon"><img src="images/Last-Watched.png" width="30" height="30"></div>
             <div class="homepage-top-title-text">
-              <div>Last Watched: Chapter 3 Name<br></div>
+              <div>Last Watched<br></div>
             </div>
           </div>
-          <div class="top-option-bar"></div>
         </div>
-        <div class="homepage-top-option">
+        <div class="homepage-top-option-chapter">
           <div class="homepage-top-option-content">
-            <div class="homepage-top-option-icon"><img src="images/File.png" width="25" height="25"></div>
-            <div class="homepage-top-option-text">
+            <div class="homepage-top-option-icon"></div>
+            <div class="homepage-top-option-chapter-text">
+              <div>Chapter 3: ReactJS &amp; Redux</div>
+            </div>
+          </div>
+        </div>
+        <div class="homepage-top-option-right">
+          <div class="homepage-top-option-content">
+            <div class="homepage-top-option-icon"><img src="images/File.png" width="20" height="20"></div>
+            <div class="homepage-top-option-text-right">
               <div>JavaScript: From Zero To Hero</div>
             </div>
           </div>
         </div>
-        <div class="homepage-top-option">
+        <div class="homepage-top-option-right">
           <div class="homepage-top-option-content">
-            <div class="homepage-top-option-icon"><img src="images/Author.png" width="25" height="25"></div>
-            <div class="homepage-top-option-text">
-              <div>Author Name</div>
-            </div>
-          </div>
-        </div>
-        <div class="homepage-top-option">
-          <div class="homepage-top-option-content">
-            <div class="homepage-top-option-icon"><img src="images/Level.png" width="25" height="25"></div>
-            <div class="homepage-top-option-text">
+            <div class="homepage-top-option-icon"><img src="images/Level.png" width="20" height="20"></div>
+            <div class="homepage-top-option-text-right">
               <div>Intermediate</div>
               <div class="level-blocks w-clearfix">
                 <div class="level-block level-block-full"></div>
@@ -172,9 +171,16 @@
               </div>
             </div>
           </div>
-          <div class="top-option-bar"></div>
         </div>
-        <div class="homepage-top-option">
+        <div class="homepage-top-option-right">
+          <div class="homepage-top-option-content">
+            <div class="homepage-top-option-icon"><img src="images/Author.png" width="20" height="20"></div>
+            <div class="homepage-top-option-text-right">
+              <div>Author Name</div>
+            </div>
+          </div>
+        </div>
+        <div class="homepage-top-option-progress">
           <div class="homepage-top-option-content">
             <div class="homepage-top-continue">
               <div class="homepage-top-continue-text">
@@ -183,7 +189,9 @@
               <div class="homepage-top-continue-icon"><img src="images/Continue.png" width="20" height="20"></div>
             </div>
             <div class="image-progress">
-              <div class="image-progress-full"></div>
+              <div class="image-progress-full">
+                <div>33%</div>
+              </div>
             </div>
             <div class="image-percentage">
               <div>33%</div>
@@ -196,7 +204,7 @@
       <div class="homepage-bottom-title">
         <div>Watched Recently</div>
       </div>
-      <div data-w-id="8040c34d-672d-2bab-7887-12e5921793fe" class="homepage-card">
+      <div data-w-id="8040c34d-672d-2bab-7887-12e5921793fe" class="homepage-card homepage-card-left">
         <div data-w-id="c060c302-695f-fbd5-b18d-41505927cbf5" class="homepage-card-details">
           <div class="homepage-card-element">
             <div class="homepage-card-icon"><img src="images/File.png" width="25" height="25"></div>
@@ -215,9 +223,10 @@
             </div>
             <div class="homepage-card-continue-icon"><img src="images/Continue.png" width="20" height="20"></div>
           </div>
-          <div class="homepage-card-author">by Magnus Lysfjord</div>
+          <div class="homepage-card-author">by Author Name</div>
           <div class="card-bar"></div>
-          <div class="homepage-card-level">Intermediate</div>
+          <div class="homepage-card-level">Level: Intermediate</div>
+          <div class="homepage-card-level">Time Left: 4h 20m</div>
         </div>
         <div class="homepage-card-progress">
           <div>40%</div>
@@ -277,65 +286,82 @@
     </div>
   </div>
   <div class="main-catalog">
-    <div class="catalog-bottom">
-      <div class="catalog-bottom-arch">
-        <div class="catalog-bottom-title">
-          <div class="catalog-bottom-title-text">
-            <div>Search Books</div>
-          </div>
-        </div>
-      </div>
-      <div class="catalog-bottom-content">
-        <div class="catalog-buttons">
-          <div class="catalog-button">
-            <div class="catalog-button-icon"><img src="images/Internet.png" width="30" height="30"></div>
-            <div class="catalog-button-text">
-              <div>Web Development</div>
-            </div>
-            <div class="catalog-vertical-bar"></div>
-          </div>
-          <div class="catalog-button">
-            <div class="catalog-button-icon"><img src="images/Cube.png" width="30" height="30"></div>
-            <div class="catalog-button-text">
-              <div>Object-Oriented Programming</div>
-            </div>
-            <div class="catalog-vertical-bar"></div>
-          </div>
-          <div class="catalog-button">
-            <div class="catalog-button-icon"><img src="images/Script.png" width="30" height="30"></div>
-            <div class="catalog-button-text">
-              <div>Script</div>
-            </div>
-            <div class="catalog-vertical-bar"></div>
-          </div>
-          <div class="catalog-button">
-            <div class="catalog-button-icon"><img src="images/Machine.png" width="30" height="30"></div>
-            <div class="catalog-button-text">
-              <div>Machine Learning</div>
-            </div>
-            <div class="catalog-vertical-bar"></div>
-          </div>
-          <div class="catalog-button">
-            <div class="catalog-button-icon"><img src="images/Internet.png" width="30" height="30"></div>
-            <div class="catalog-button-text">
-              <div>Web Development</div>
+    <div class="div-block">
+      <div class="catalog-bottom">
+        <div class="catalog-bottom-top">
+          <div class="catalog-bottom-title">
+            <div class="catalog-bottom-title-text">
+              <div>Search Books</div>
             </div>
           </div>
         </div>
-        <div class="catalog-search">
-          <div class="form-block-catalog w-form">
-            <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-catalog"><input type="text" class="catalog-form-input w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Search for books ..." id="field-2"></form>
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
+        <div class="catalog-bottom-content">
+          <div class="catalog-search">
+            <div class="form-block-catalog w-form">
+              <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-catalog"><img src="images/Search.png" width="25" height="25"><input type="text" class="catalog-form-input w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Search for books ..." id="field-2"></form>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
             </div>
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+          <div class="catalog-filter">
+            <div class="catalog-filter-menu"><img src="images/Filter.png" width="20" height="20">
+              <div>Filter</div>
+            </div>
+            <div class="catalog-filter-property"><a href="#" class="catalog-property-icon w-inline-block"><img src="images/Close.png" width="10" height="10"></a>
+              <div>Intermediate</div>
+            </div>
+            <div class="catalog-filter-property"><a href="#" class="catalog-property-icon w-inline-block"><img src="images/Close.png" width="10" height="10"></a>
+              <div>Author Name</div>
+            </div>
+            <div class="catalog-filter-property"><a href="#" class="catalog-property-icon w-inline-block"><img src="images/Close.png" width="10" height="10"></a>
+              <div>Java</div>
+            </div>
+          </div>
+          <div class="catalog-buttons">
+            <div class="catalog-button">
+              <div class="catalog-button-icon"><img src="images/Internet.png" width="30" height="30"></div>
+              <div class="catalog-button-text">
+                <div>Web Development</div>
+              </div>
+              <div class="catalog-vertical-bar"></div>
+            </div>
+            <div class="catalog-button">
+              <div class="catalog-button-icon"><img src="images/Cube.png" width="30" height="30"></div>
+              <div class="catalog-button-text">
+                <div>Object-Oriented Programming</div>
+              </div>
+              <div class="catalog-vertical-bar"></div>
+            </div>
+            <div class="catalog-button">
+              <div class="catalog-button-icon"><img src="images/Brain.png" width="30" height="30"></div>
+              <div class="catalog-button-text">
+                <div>Artificial Intelligence</div>
+              </div>
+              <div class="catalog-vertical-bar"></div>
+            </div>
+            <div class="catalog-button">
+              <div class="catalog-button-icon"><img src="images/Machine.png" width="30" height="30"></div>
+              <div class="catalog-button-text">
+                <div>Machine Learning</div>
+              </div>
+              <div class="catalog-vertical-bar"></div>
+            </div>
+            <div class="catalog-button">
+              <div class="catalog-button-icon"><img src="images/Script.png" width="30" height="30"></div>
+              <div class="catalog-button-text">
+                <div>Script</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="main-library"></div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
