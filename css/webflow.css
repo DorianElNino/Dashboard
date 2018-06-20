@@ -402,7 +402,7 @@ textarea.w-select {
 }
 .w-file-upload {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .w-file-upload-input {
   width: 0.1px;
@@ -421,7 +421,10 @@ textarea.w-select {
 .w-file-upload-success {
   display: flex;
 }
-.w-file-upload-state--hidden {
+.w-file-upload-default.w-hidden,
+.w-file-upload-uploading.w-hidden,
+.w-file-upload-error.w-hidden,
+.w-file-upload-success.w-hidden {
   display: none;
 }
 .w-file-upload-uploading-btn {
@@ -443,7 +446,7 @@ textarea.w-select {
   flex-grow: 1;
   justify-content: space-between;
   margin: 0;
-  padding: 8px 12px;
+  padding: 8px 9px 8px 11px;
   border: 1px solid #cccccc;
   background-color: #fafafa;
 }
@@ -453,9 +456,11 @@ textarea.w-select {
   display: block;
 }
 .w-file-remove-link {
-  width: 20px;
-  height: 20px;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
   display: flex;
+  cursor: pointer;
 }
 .w-icon-file-upload-remove {
   margin: auto;
@@ -463,7 +468,8 @@ textarea.w-select {
 }
 .w-file-upload-error-msg {
   color: #ea384c;
-  padding-top: 12px;
+  margin-top: 10px;
+  padding: 2px 0;
 }
 .w-file-upload-info {
   display: inline-block;
@@ -483,9 +489,6 @@ textarea.w-select {
   background-position: 12px 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-}
-.w-file-upload-label-error {
-  border: 1px solid #ea384c;
 }
 .w-icon-file-upload {
   width: 20px;
