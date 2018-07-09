@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jul 04 2018 10:13:15 GMT+0000 (UTC)  -->
+<!--  Last Published: Mon Jul 09 2018 07:55:59 GMT+0000 (UTC)  -->
 <html data-wf-page="5b391751b374ddd732e15fcd" data-wf-site="5b391751b374dd0088e15fcc">
 <head>
   <meta charset="utf-8">
-  <title>Library Final</title>
+  <title>Library</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -77,56 +77,36 @@ body {
       <div class="nav-option-icon"><img src="images/hide-interface-symbol.png" width="25" height="25"></div>
     </div>
   </div>
-  <div class="library">
-    <div data-w-id="871aea54-f47c-6d30-b391-af3bce2eba49" class="library-top">
-      <div class="library-top-content">
-        <div class="library-top-categories-title">
-          <div class="library-top-categories-title-text">
-            <div>Categories</div>
-          </div>
-        </div>
-        <div class="library-top-categories-list w-clearfix">
-          <div class="library-top-category"><img src="images/Web.png" class="library-top-category-icon">
-            <div>Web Development</div>
-          </div>
-          <div class="library-top-category"><img src="images/AI.png" class="library-top-category-icon">
-            <div>Artificial Intelligence</div>
-          </div>
-          <div class="library-top-category"><img src="images/Script.png" class="library-top-category-icon">
-            <div>Script Languages</div>
-          </div>
-          <div class="library-top-category"><img src="images/MI.png" class="library-top-category-icon">
-            <div>Machine Learning</div>
-          </div>
-          <div class="library-top-category"><img src="images/Oop.png" class="library-top-category-icon">
-            <div>Object-Oriented Programming</div>
-          </div>
-        </div>
-        <div class="library-top-tags-title">
-          <div class="library-top-tags-title-text">
-            <div>Tags</div>
-          </div>
-        </div>
-        <div class="library-top-tags-list w-clearfix">
-          <div class="library-top-tag">
-            <div>Object-Oriented</div><img src="images/Remove.png" class="library-top-tag-exit-icon"></div>
-          <div class="library-top-tag">
-            <div>Intermediate</div><img src="images/Remove.png" class="library-top-tag-exit-icon"></div>
-          <div class="library-top-tag">
-            <div>Magnus Lisfjord</div><img src="images/Remove.png" class="library-top-tag-exit-icon"></div>
-          <div class="library-top-tag">
-            <div>Magnus Lisfjord</div><img src="images/Remove.png" class="library-top-tag-exit-icon"></div>
-          <div class="library-top-tag">
-            <div>Magnus Lisfjord</div><img src="images/Remove.png" class="library-top-tag-exit-icon"></div>
-        </div>
-      </div>
+  <div class="library w-clearfix">
+    <div class="library-top">
       <div class="library-top-title">
         <div class="library-top-title-text">
           <div>Library</div>
+        </div><img src="images/Expand.png" width="20" height="20" data-w-id="adeaef99-50bf-0152-fd6a-057860cd1823" style="display:none" class="library-top-show"></div>
+      <div data-w-id="5b69cc4d-5a86-1d68-eb99-32f9954b7b78" class="library-top-content">
+        <div class="library-top-categories w-clearfix">
+          <div class="library-top-category"><img src="images/Oop.png" width="20" height="20" class="library-top-category-icon">
+            <div>Object-Oriented Programming</div>
+          </div>
+          <div class="library-top-category"><img src="images/Web.png" width="20" height="20" class="library-top-category-icon">
+            <div>Web Development</div>
+          </div>
+          <div class="library-top-category"><img src="images/MI.png" width="20" height="20" class="library-top-category-icon">
+            <div>Machine Learning</div>
+          </div>
+          <div class="library-top-category"><img src="images/VR.png" width="20" height="20" class="library-top-category-icon">
+            <div>Virtual Reality</div>
+          </div>
+          <div class="library-top-category"><img src="images/AI.png" width="20" height="20" class="library-top-category-icon">
+            <div>Artificial Intelligence</div>
+          </div>
+          <div class="library-top-category"><img src="images/Script.png" width="20" height="20" class="library-top-category-icon">
+            <div>Script Languages</div>
+          </div>
         </div>
-        <div class="library-top-search-div">
-          <div data-w-id="ad82acb7-0c13-eedc-4f31-35061e88cabc" style="opacity:0;display:none" class="library-form-block w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="library-form"><img src="images/Magnifier.png" width="15" height="15" class="library-search-icon"><input type="text" class="library-search-field w-input" maxlength="256" name="field" data-name="Field" placeholder="Search" id="field"></form>
+        <div class="library-top-search">
+          <div class="library-search-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" class="library-search-form"><img src="images/Magnifier.png" width="20" height="20" class="library-search-icon"><input type="text" class="library-search-field w-input" maxlength="256" name="field" data-name="Field" placeholder="Example Text" id="field" required=""></form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
@@ -135,10 +115,8 @@ body {
             </div>
           </div>
         </div>
-        <div class="library-top-filter">
-          <div data-w-id="66161885-3056-f3d2-bb35-04542b465d0e" class="library-top-filter-button">
-            <div class="text-block">Filter</div>
-          </div>
+        <div class="library-top-hide">
+          <div data-w-id="6dce90e9-396c-ad69-08b4-b04c59e286bf" class="library-top-hide-button"><img src="images/Show-Less.png" width="20" height="20"></div>
         </div>
       </div>
     </div>
@@ -186,11 +164,11 @@ body {
             <div>C++: An Advanced Masterpiece On OOP</div>
           </div>
           <div class="library-card-description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p>C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features.</p>
           </div>
           <div class="library-card-continue">
             <div class="library-card-continue-button">
-              <div>Show More</div>
+              <div>Resume</div>
             </div>
           </div>
           <div class="library-card-left-bottom">
@@ -205,11 +183,45 @@ body {
               </div>
             </div>
             <div class="library-card-left-bottom-item"><img src="images/Star.png" class="library-card-left-bottom-item-icon">
-              <div>4.0 / 5.0</div>
+              <div>4.6 / 5.0</div>
             </div>
           </div>
         </div>
-        <div class="library-card-right"></div>
+        <div class="library-card-right cardbackground1"></div>
+      </div>
+      <div class="library-card">
+        <div class="library-card-left">
+          <div class="library-card-category"><img src="images/MI.png" width="20" height="20" class="library-card-category-icon">
+            <div>Machine Learning</div>
+          </div>
+          <div class="library-card-title">
+            <div>Python: Introduction To Machine Learning</div>
+          </div>
+          <div class="library-card-description">
+            <p>Machine learning is a subset of artificial intelligence in the field of computer science that often uses statistical techniques to give computers the ability to &quot;learn&quot;.</p>
+          </div>
+          <div class="library-card-continue">
+            <div class="library-card-continue-button">
+              <div>Resume</div>
+            </div>
+          </div>
+          <div class="library-card-left-bottom">
+            <div class="library-card-left-bottom-item"><img src="images/Author.png" class="library-card-left-bottom-item-icon">
+              <div>Steve Jobs</div>
+            </div>
+            <div class="library-card-left-bottom-item"><img src="images/Level.png" class="library-card-left-bottom-item-icon">
+              <div class="level-blocks w-clearfix">
+                <div class="level-block-small level-block-full"></div>
+                <div class="level-block-average level-block-full"></div>
+                <div class="level-block-big"></div>
+              </div>
+            </div>
+            <div class="library-card-left-bottom-item"><img src="images/Star.png" class="library-card-left-bottom-item-icon">
+              <div>3.9 / 5.0</div>
+            </div>
+          </div>
+        </div>
+        <div class="library-card-right cardbackground2"></div>
       </div>
     </div>
   </div>
