@@ -159,7 +159,7 @@
   align-items: center;
 }
 
-.chapters {
+.analytics {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -180,7 +180,7 @@
   background-image: linear-gradient(135deg, #000, #1f2833);
 }
 
-.chapters-top {
+.analytics-top {
   position: fixed;
   z-index: 10;
   display: -webkit-box;
@@ -198,7 +198,7 @@
   box-shadow: 1px 1px 3px 0 #000;
 }
 
-.chapters-top-back {
+.analytics-top-back {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -216,7 +216,7 @@
   align-items: center;
 }
 
-.chapters-top-back-button {
+.analytics-top-back-button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -239,18 +239,18 @@
   cursor: pointer;
 }
 
-.chapters-top-back-button:hover {
+.analytics-top-back-button:hover {
   background-color: #32b0eb;
   box-shadow: 1px 1px 3px 0 #000;
 }
 
-.chapters-top-back-icon {
+.analytics-top-back-icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.chapters-top-title {
+.analytics-top-title {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -272,7 +272,7 @@
   align-items: flex-start;
 }
 
-.chapters-top-title-coursename {
+.analytics-top-title-coursename {
   padding: 8px 15px;
   font-family: Montserrat, sans-serif;
   color: #f8f8ff;
@@ -281,7 +281,7 @@
   letter-spacing: 2px;
 }
 
-.chapters-top-title-info {
+.analytics-top-title-info {
   padding-right: 15px;
   padding-left: 15px;
   font-family: Montserrat, sans-serif;
@@ -289,14 +289,14 @@
   letter-spacing: 1px;
 }
 
-.chapters-content {
+.analytics-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  padding-top: 80px;
+  padding: 90px 10px 10px 60px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -307,51 +307,13 @@
   align-items: center;
 }
 
-.chapters-content-list {
-  width: 85%;
-  height: 100%;
-  padding-right: 75px;
-  padding-bottom: 20px;
-  padding-left: 75px;
-}
-
-.chapters-line {
+.analytics-graphs-exercises-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  height: 220px;
-}
-
-.chapters-line-number {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20%;
-  height: 100%;
-  float: left;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.chapters-line-number-text {
-  position: relative;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40px;
-  height: 40px;
+  height: 25%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -360,132 +322,238 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border: 1px solid #f8f8ff;
-  border-radius: 5px;
+}
+
+.analytics-sun-bottom {
+  width: 100%;
+  height: 19%;
+  border: 1px solid #32b0eb;
   background-color: #1f2833;
-  box-shadow: 1px 1px 3px 0 #000;
+}
+
+.analytics-sun-content {
+  width: 100%;
+  height: 90%;
+  background-color: #1f2833;
+  background-image: url('../images/Breaking-down-hierarchical-data-with-Treemap-and-Sunburst-charts-FI.png');
+  background-position: 50% 50%;
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+}
+
+.analytics-sun-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1f2833;
+}
+
+.analytics-graphs-points {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #32b0eb;
+  background-color: #1f2833;
+}
+
+.analytics-sun-bottom-icon {
+  margin-right: 10px;
+}
+
+.analytics-text1 {
   font-family: Montserrat, sans-serif;
-  color: #f8f8ff;
+  color: #fff;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 
-.chapters-line-item {
-  width: 70%;
-  height: 200px;
-  margin-top: 10px;
-  padding-right: 50px;
-  padding-left: 50px;
-  float: left;
-  border-radius: 10px;
-  background-color: #1f2833;
-  box-shadow: 2px 2px 20px 0 #000;
-}
-
-.chapters-line-title {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+.analytics-text3 {
   font-family: Montserrat, sans-serif;
-  color: #f8f8ff;
-  font-weight: 600;
+  color: #a5a5a5;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
-.chapters-title-icon {
-  margin-right: 15px;
+.analytics-text3._10pxmarginleft {
+  margin-left: 10px;
+  color: #a5a5a5;
 }
 
-.chapters-line-number-line {
-  position: relative;
-  width: 5px;
-  height: 100vh;
-  margin-left: -20px;
-  background-color: #1f2833;
-}
-
-.chapters-line-description {
-  height: 110px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  font-family: Exo, sans-serif;
-  color: #f8f8ff;
-}
-
-.chapters-item-bottom {
-  width: 100%;
-  height: 50px;
-  border-top: 1px solid hsla(0, 0%, 100%, .3);
-}
-
-.chapter-progress {
+.analytics-sun {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
   height: 100%;
-  float: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.analytics-graphs-exercises {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 1px solid #32b0eb;
+  background-color: #1f2833;
+}
+
+.analytics-graphs-points-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 25%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.analytics-sun-bottom-element {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 33.3333%;
+  padding-left: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.analytics-graphs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin-left: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.analytics-graphs-errors {
+  width: 100%;
+  height: 38%;
+  border: 1px solid #32b0eb;
+  background-color: #1f2833;
+}
+
+.analytics-all-graphs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: rgba(7, 32, 50, .3);
+}
+
+.analytics-text2 {
   font-family: Montserrat, sans-serif;
   color: #d3d3d3;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.chapter-progressbar {
-  width: 70%;
-  height: 5px;
-  margin-right: 10px;
-  background-color: #d3d3d3;
-}
-
-.chapter-progressbar-full {
-  width: 50%;
-  height: 100%;
-  background-color: #32b0eb;
-}
-
-.chapter-continue {
+.analytics-sun-graph {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  height: 100%;
-  float: left;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100%;
+  height: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #32b0eb;
 }
 
-.chapter-continue-button {
+.analytics-graphs-errors-title {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px 15px;
+  width: 100%;
+  height: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -494,53 +562,39 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #f8f8ff;
-  border-radius: 5px;
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-  font-family: Montserrat, sans-serif;
-  color: #f8f8ff;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-decoration: none;
 }
 
-.chapter-continue-button:hover {
-  border-color: #32b0eb;
-  color: #32b0eb;
+.analytics-graphs-exercises-content {
+  width: 100%;
+  height: 75%;
+}
+
+.analytics-graphs-points-content {
+  width: 100%;
+  height: 75%;
+}
+
+.analytics-graphs-errors-content {
+  width: 100%;
+  height: 75%;
 }
 
 @media (max-width: 991px) {
-  .chapters-top-back {
+  .analytics-top-back {
     width: 25%;
   }
-  .chapters-top-title {
+  .analytics-top-title {
     width: 75%;
   }
-  .chapters-content {
+  .analytics-content {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .chapters-content-list {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .chapters-line-number-text {
-    width: 40px;
-    height: 40px;
+  .analytics-text1 {
     font-size: 20px;
-    line-height: 26px;
-  }
-  .chapters-line-item {
-    width: 80%;
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-  .chapters-line-number-line {
-    margin-left: -20px;
+    line-height: 28px;
   }
 }
 
@@ -551,93 +605,78 @@
     -ms-transform: translate(-200px, 0px);
     transform: translate(-200px, 0px);
   }
-  .chapters-top {
+  .analytics-top {
     padding-left: 0px;
   }
-  .chapters-top-back {
+  .analytics-top-back {
     width: 30%;
   }
-  .chapters-top-back-button {
+  .analytics-top-back-button {
     font-size: 12px;
     letter-spacing: 1px;
   }
-  .chapters-top-back-icon {
+  .analytics-top-back-icon {
     width: 15px;
     height: 15px;
   }
-  .chapters-top-title {
+  .analytics-top-title {
     width: 70%;
   }
-  .chapters-top-title-coursename {
+  .analytics-top-title-coursename {
     font-size: 16px;
     letter-spacing: 1px;
   }
-  .chapters-top-title-info {
+  .analytics-top-title-info {
     font-size: 12px;
   }
-  .chapters-content-list {
-    width: 100%;
-    padding-right: 10px;
+  .analytics-content {
     padding-left: 10px;
   }
-  .chapters-line {
+  .analytics-text1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .analytics-sun {
     width: 100%;
+    float: left;
   }
-  .chapters-line-number-text {
-    width: 30px;
-    height: 30px;
+  .analytics-graphs {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
   }
-  .chapters-line-item {
-    padding-right: 15px;
-    padding-left: 15px;
+  .analytics-all-graphs {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
-  .chapters-line-title {
+  .analytics-text2 {
     font-size: 12px;
-  }
-  .chapters-line-number-line {
-    margin-left: -15px;
-  }
-  .chapters-line-description {
-    font-size: 12px;
-  }
-  .chapter-continue-button {
-    padding: 6px 12px;
   }
 }
 
 @media (max-width: 479px) {
-  .chapters-top-back {
+  .analytics-top-back {
     padding-right: 5px;
     padding-left: 5px;
   }
-  .chapters-top-back-button {
+  .analytics-top-back-button {
     padding: 6px 10px;
   }
-  .chapters-top-back-icon {
+  .analytics-top-back-icon {
     margin-right: 5px;
   }
-  .chapters-top-title-coursename {
+  .analytics-top-title-coursename {
     padding: 4px 0px;
     font-size: 14px;
     letter-spacing: 1px;
   }
-  .chapters-top-title-info {
+  .analytics-top-title-info {
     padding: 4px 0px;
-    letter-spacing: 1px;
-  }
-  .chapters-line-number {
-    display: none;
-  }
-  .chapters-line-item {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .chapter-progress {
-    letter-spacing: 1px;
-  }
-  .chapter-continue-button {
-    padding: 4px 10px;
     letter-spacing: 1px;
   }
 }
